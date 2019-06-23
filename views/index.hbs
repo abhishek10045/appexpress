@@ -1,0 +1,15 @@
+{{> header }}    
+{{> navbar}}
+    {{> form}}
+    {{#each codes}}
+        <div style="width: 100px; float:left; height:100px; margin:10px; height:100px">
+            <h3>{{letter}}-Codes</h3>
+            <ul>
+                {{#each codes}}
+                    <li><a href="" class="codeLink">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    {{/each}}
+{{> js}}    
+{{> footer }}
